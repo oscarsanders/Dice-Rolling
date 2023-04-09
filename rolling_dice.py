@@ -1,27 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[87]:
-
-
-# generate random integer values
 from random import randint
 
-
-# In[88]:
-
-
 dice_faces = [ "| · |", "|· ·|", "|···|", "|: :|", "|:·:|", "|:::|"]
-
-
-# In[94]:
-
-
-
-
-
-# In[104]:
-
 
 while True:
     num_dice = int(input("Number of dices you want to rolling: "))
@@ -46,11 +25,4 @@ while True:
     except ValueError:
         print(" ******************************* ")
         print(" You should choose YES or NO ")
-    
-
-
-# In[ ]:
-
-
-
-
+        
