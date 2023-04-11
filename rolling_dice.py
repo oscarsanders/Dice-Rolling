@@ -1,4 +1,4 @@
-from random import randint
+import random
 
 dice_faces = [ "| · |", "|· ·|", "|···|", "|: :|", "|:·:|", "|:::|"]
 
@@ -6,9 +6,9 @@ while True:
     num_dice = int(input("Number of dices you want to rolling: "))
     
     for i in range(0,num_dice):
-        j = randint(0, 5)
         print("")
-        print(dice_faces[j]," → " , j+1)
+        s = random.choice(dice_faces)
+        print(s," → " , dice_faces.index(s) + 1)
         
     choice = input("Continue: Yes(y) ←→ No (n) ").lower()
     
@@ -24,5 +24,5 @@ while True:
         
     except ValueError:
         print(" ******************************* ")
-        print(" You should choose YES or NO ")
+        
         
